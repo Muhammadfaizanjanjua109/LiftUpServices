@@ -6,9 +6,8 @@ import "../assets/css/boxicon.min.css";
 import "../assets/css/remix.css";
 import "../assets/css/swiper.bundle.min.css";
 import "./globals.css";
-import Script from "next/script";
 import {logo} from '../assets/images/logo.png'
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -21,13 +20,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
   <meta property="og:image" content={logo} />
       <body className={inter.className}>{children}
-    
+      <SpeedInsights />
       </body>
-{/* 
-      <Script src="../../public/customjs/main.js"  />
-        <Script src='../../public/customjs/aos.js'    />
-        <Script src="../../public/customjs/jlightbox.js"   />
-        <Script src="../../public/customjs/pure_counter.js"   /> */}
     </html>
   );
 }
