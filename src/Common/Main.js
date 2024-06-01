@@ -1,12 +1,13 @@
 
 import dynamic from 'next/dynamic'
 import React from 'react'
-import Testimonials from './Testimonials'
-import MoreAboutServices from './MoreAboutServices'
-import Count from './Count'
-import ContactUs from './ContactUs'
 const About = dynamic(() => import('./About'))
 const Services = dynamic(() => import('./Services'))
+const Testimonials = dynamic(() => import('./Testimonials'))
+const MoreAboutServices = dynamic(() => import('./MoreAboutServices'))
+const ContactUs = dynamic(() => import('./ContactUs'))
+const Count = dynamic(() => import('./Count'))
+
 function Main() {
 
   return (
