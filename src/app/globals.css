@@ -410,10 +410,17 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+.no-webp  #hero {
   width: 100%;
   min-height: 100vh;
   background: url("../assets/images/hero-bg.png") top center;
+  background-size: cover;
+  position: relative;
+}
+.webp #hero {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../assets/images/hero-bg.webp") top center;
   background-size: cover;
   position: relative;
 }
@@ -1981,13 +1988,7 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  min-height: 100vh;
-  background: url("../assets/images/hero-bg.png") top center;
-  background-size: cover;
-  position: relative;
-}
+
 
 #hero:before {
   content: "";
