@@ -1,0 +1,21 @@
+.txt for LiftUpServices Next.js 14 Website
+
+User-agent: *
+
+# Disallow common Next.js build output directories
+Disallow: /_next/
+Disallow: /.next/static/chunks/
+
+# Disallow server-side rendering (SSR) related directories (if applicable)
+Disallow: /api/
+Disallow: /getServerSideProps/
+
+# Disallow potential sensitive directories
+Disallow: /admin/
+Disallow: /login/
+
+# Allow indexing of static assets (optional)
+# Consider potential SEO implications before allowing all static assets
+# Allow: /static/
+
+Sitemap: https://LiftUpServices.online/sitemap.xml  # Replace with your sitemap URL
