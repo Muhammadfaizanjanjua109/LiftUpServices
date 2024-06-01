@@ -719,12 +719,16 @@ section {
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
-.cta {
+.no-webp .cta {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
-
+.web .cta {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/cta-bg.webp") fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+}
 .cta h3 {
   color: #fff;
   font-size: 28px;
@@ -1003,12 +1007,16 @@ section {
   color: #626262;
 }
 
-.counts .image {
+.no-webp .counts .image {
   background: url('../assets/images/counts-img.jpg') center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
-
+.webp .counts .image {
+  background: url('../assets/images/counts-img.webp') center center no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
 @media (max-width: 991px) {
   .counts .image {
     text-align: center;
@@ -2284,8 +2292,14 @@ section {
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
-.cta {
+.no-webp .cta {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/cta-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.webp .cta {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/cta-bg.webp") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -2568,12 +2582,16 @@ section {
   color: #626262;
 }
 
-.counts .image {
+.no-webp .counts .image {
   background: url("../assets/images/counts-img.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
-
+.webp .counts .image {
+  background: url("../assets/images/counts-img.webp") center center no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
 @media (max-width: 991px) {
   .counts .image {
     text-align: center;
@@ -2593,14 +2611,20 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials {
+.no-webp .testimonials {
   padding: 80px 0;
   background: url("../assets/images/testimonials-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
 }
-
+.webp .testimonials {
+  padding: 80px 0;
+  background: url("../assets/images/testimonials-bg.webp") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
 .testimonials::before {
   content: "";
   position: absolute;
